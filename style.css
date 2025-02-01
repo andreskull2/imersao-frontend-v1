@@ -1,0 +1,44 @@
+body {
+    background-color: var(--bg-color);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.75rem;
+    width: 18.75rem;
+}
+
+.sidebar__navigation {
+    background-color: var(--bg-shape);
+    border-radius: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    padding: 1rem 0 0 1rem;
+}
+
+.sidebar__navigation .logo img {
+    width: 5rem;
+}
+
+.sidebar nav ul {
+    margin-top: 1.25rem;
+    padding: 0 1.25rem 0.625rem 1.25rem;
+}
+
+.sidebar ul li {
+    padding: 0.625rem 0;
+}
+
+.sidebar nav ul li a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: "DM Sans", sans-serif;
+}
+
