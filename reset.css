@@ -1,0 +1,37 @@
+/* Universal reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'DM Sans', sans-serif; /* ou sua variável */
+}
+
+body {
+  line-height: 1.5;
+  background: #fff; /* Melhor definir um fundo claro */
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button {
+  border: none;
+  background: transparent; /* Pode ser útil se precisar resetar o fundo do botão */
+  cursor: pointer;
+}
+
+/* HTML5 elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
