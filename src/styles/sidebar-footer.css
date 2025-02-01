@@ -1,5 +1,6 @@
 body {
     background-color: var(--bg-color);
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -40,7 +41,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.875rem;
-    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar nav ul li .fa {
@@ -79,7 +79,6 @@ body {
     border: 0;
     font-size: 0.875rem;
     font-weight: 700;
-    font-family: var(--font-dm-sans);
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -120,7 +119,6 @@ body {
 .section-playlist__content .text {
     padding-bottom: 0.875rem;
     color: var(--text-base-light);
-    font-family: var(--font-dm-sans);
 }
 
 .section-playlist__content .title {
@@ -139,7 +137,6 @@ body {
     border-radius: 1.5rem;
     font-size: 0.75rem;
     font-weight: 700;
-    font-family: var(--font-dm-sans);
     text-decoration: none;
     text-transform: none;
     padding: 0.625rem;
@@ -154,7 +151,6 @@ body {
 
 .sidebar .cookies a {
     color: var(--text-gray);
-    font-family: var(--font-dm-sans);
     font-weight: 500;
     font-size: 0.625rem;
     text-decoration: none;
@@ -175,4 +171,45 @@ body {
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 1.5rem;
+}
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 0.9375rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.disclaimer-premium .text {
+    flex-shrink: 0;
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+    color: var(--text-base-light);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: var(--text-base-light);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: var(--bg-light);
+    color: var(--text-base-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.875rem 1.875rem;
+    border: 0;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
 }
