@@ -102,7 +102,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1.5rem;
-    background-color: var(--bg-paylist);
+    background-color: var(--bg-playlist);
     color: var(--text-gray);
     font-weight: 600;
     font-size: 0.875rem;
