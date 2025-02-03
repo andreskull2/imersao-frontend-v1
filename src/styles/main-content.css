@@ -92,3 +92,30 @@
     background-color: var(--bg-light);
     border-radius: 2.5rem;
 }
+
+/* PLAYLIST */
+.playlist-container {
+    height: 68vh;
+    padding-top: 1rem;
+    margin: 0.625rem;
+    border-radius: 0.625rem;
+    background-color: var(--bg-shape);
+}
+
+.playlist {
+    margin: 1.5rem;
+}
+
+.playlist #greeting {
+    color: var(--text-base-light);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.playlist .session {
+    color: var(--text-base-light);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
