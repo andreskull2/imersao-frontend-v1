@@ -213,3 +213,26 @@ body {
     cursor: pointer;
     flex-shrink: 0;
 }
+
+@media (max-width: 1024px) {
+    .sidebar .cookies {
+        margin: 0.625rem 1.5rem;
+    }
+} 
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 16rem;
+    }
+    .disclaimer-premium {
+        padding: 0.9375rem 1rem 0.9375rem 2rem;
+        align-items: center;
+    }
+    .disclaimer-premium .text {
+        flex-shrink: 1;
+        width: 31.25rem;
+    }
+    .disclaimer-premium button {
+        padding: 0.875rem 1.5rem;
+    }
+}

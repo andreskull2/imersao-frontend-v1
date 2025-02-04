@@ -15,7 +15,6 @@
     margin: 0.625rem;
     border-radius: 0.5rem;
     background-color: var(--bg-shape);
-    padding: 0.75rem;
 }
 
 .header__navigation .navigation {
@@ -95,8 +94,8 @@
 
 /* PLAYLIST */
 .playlist-container {
-    height: 68vh;
-    padding-top: 1rem;
+    height: 79vh;
+    padding-top: 2rem;
     margin: 0.625rem;
     border-radius: 0.625rem;
     background-color: var(--bg-shape);
@@ -121,7 +120,7 @@
 
 /* SCROLL */
 .offer__scroll-container {
-    max-height: 43vh;
+    max-height: 54vh;
     margin: 1.5rem;
     overflow-y: auto;
 }
@@ -139,7 +138,7 @@
 .offer__list-item {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* 1440px */
     gap: 1rem;
     margin-bottom: 1rem;
     /* Codigo com JS calculando os cards por coluna 
@@ -150,8 +149,8 @@
 
 .cards {
     position: relative;
-    width: 13.75rem;
-    height: 12.5rem;
+    width: 11.875rem; /* 190px */
+    height: 10.625rem; /* 170px */
     overflow: hidden;
     border-radius: 0.5rem;
     
@@ -232,7 +231,7 @@
     right: 0;
     bottom: 0;
     height: auto;
-    width: 6.6875rem;
+    width: 6.875rem;
     transform: rotate(25deg) translate(18%, -2%);
 }
 
@@ -349,5 +348,70 @@
 
 /* FIM CARD ARTISTA */
 
+/* Para desktops grandes (até 1280px) */
+@media (max-width: 1280px) {
+    .playlist-container {
+        height: 76vh;
+    }
+    .playlist #greeting {
+        margin-bottom: 1.5rem;
+    }
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+    .offer__scroll-container {
+        max-height: 50vh;
+    }
+}
 
+@media (max-width: 1024px) {
+    .header__search {
+        width: 18.75rem;
+    }
+    .playlist-container {
+        height: 68vh;
+        padding-top: 1rem;
+    }
+    .playlist #greeting {
+        margin-bottom: 1rem;
+    }
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+    .offer__scroll-container {
+        max-height: 38vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+       margin-left: 15.5rem;
+       margin-right: 0.5rem; 
+    }
+    .arrow-left,
+    .arrow-right {
+        display: none;
+    }
+    .header__search {
+        width: 17.5rem;
+    }
+    .header__login .subscribe {
+        font-size: 0.625rem;
+        margin-right: 1rem;
+        margin-left: 0.625rem; 
+    }
+    .header__login .login {
+        width: 5rem;
+        font-size: 12px;
+    }
+    .playlist-container {
+        height: 80vh;
+    }
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr;
+    } 
+    .offer__scroll-container {
+        max-height: 62vh;
+    }
+}
 
